@@ -1,21 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hexoid - Interactive WebGL Trail</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="canvas-container"></div>
-    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hexoid - Interactive WebGL Trail</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
 
-    <!-- CDNs for Three.js and GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="script.js"></script>
-</body>
+        <h1 class="watermark">Monster.dev</h1>
+
+        <!-- Cinematic Loader UI -->
+        <div id="loader-ui">
+            <div class="loader-bg-overlay"></div>
+            <div class="loader-content">
+                <div class="text-mask-container">
+                    <div class="loader-text" id="text-phase-1">
+                        OBSERVING FORM
+                    </div>
+                    <div class="loader-text" id="text-phase-2">
+                        AWAKENING MOTION
+                    </div>
+                    <div class="loader-text" id="text-phase-3">
+                        BECOMING LIGHT
+                    </div>
+                    <div class="loader-text" id="text-phase-4">
+                        TRANSFORM &bull; EVOLVE &bull; INSPIRE
+                    </div>
+                </div>
+                <div class="loader-progress-subtle">
+                    <span class="progress-label">TRANSFORMATION PHASE</span>
+                    <span class="progress-number" id="progress-val"
+                        >01 / 07</span
+                    >
+                </div>
+            </div>
+        </div>
+
+        <div id="canvas-container"></div>
+
+        <!-- CDNs for Three.js and GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
