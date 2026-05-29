@@ -220,4 +220,5 @@ header {
     font-family: gilroy;
     font-weight: 400;
     letter-spacing: 1.6px;
+    user-select: none;
 }
